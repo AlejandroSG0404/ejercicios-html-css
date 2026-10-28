@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #ddd; }
+        .baja { color: red; }
+        .media { color: orange; }
+        .alta { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Encuesta de satisfacción</h1>
+
+    <form>
+        <label for="nombre">Nombre (opcional):</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        Servicio utilizado:<br>
+        <input type="radio" name="servicio" value="Asesoría"> Asesoría
+        <input type="radio" name="servicio" value="Entrega"> Entrega
+        <input type="radio" name="servicio" value="Soporte técnico"> Soporte técnico
+        <input type="radio" name="servicio" value="Instalación"> Instalación<br><br>
+
+        Valoración del 1 al 5:<br>
+        <input type="radio" name="valoracion" value="1"> 1
+        <input type="radio" name="valoracion" value="2"> 2
+        <input type="radio" name="valoracion" value="3"> 3
+        <input type="radio" name="valoracion" value="4"> 4
+        <input type="radio" name="valoracion" value="5"> 5<br><br>
+
+        ¿Qué te ha gustado más?<br>
+        <input type="checkbox" name="aspectos" value="Atención"> Atención
+        <input type="checkbox" name="aspectos" value="Rapidez"> Rapidez
+        <input type="checkbox" name="aspectos" value="Precio"> Precio
+        <input type="checkbox" name="aspectos" value="Calidad"> Calidad<br><br>
+
+        ¿Recomendarías el servicio?<br>
+        <input type="radio" name="recomendaria" value="Sí"> Sí
+        <input type="radio" name="recomendaria" value="No"> No<br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Resultados de cinco encuestas</h2>
+    <table>
+        <tr>
+            <th>Cliente</th>
+            <th>Servicio</th>
+            <th>Valoración</th>
+            <th>Aspectos positivos</th>
+            <th>Recomienda</th>
+            <th>Comentarios</th>
+        </tr>
+        <tr>
+            <td>Ana</td><td>Asesoría</td><td class="alta">5/5</td>
+            <td>Atención, calidad</td><td>Sí</td><td>Muy buen servicio.</td>
+        </tr>
+        <tr>
+            <td>Carlos</td><td>Entrega</td><td class="alta">4/5</td>
+            <td>Rapidez, precio</td><td>Sí</td><td>Llegó a tiempo.</td>
+        </tr>
+        <tr>
+            <td>Lucía</td><td>Soporte técnico</td><td class="media">3/5</td>
+            <td>Atención</td><td>Sí</td><td>La espera fue larga.</td>
+        </tr>
+        <tr>
+            <td>Javier</td><td>Instalación</td><td class="baja">2/5</td>
+            <td>Precio</td><td>No</td><td>Tardó demasiado.</td>
+        </tr>
+        <tr>
+            <td>María</td><td>Asesoría</td><td class="alta">5/5</td>
+            <td>Atención, rapidez</td><td>Sí</td><td>Excelente experiencia.</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            color: #222;
+        }
+
+        table {
+            width: max-content;
+            max-width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f5f8;
+        }
+
+        .agotado {
+            color: #b42318;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de productos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Disponibilidad</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Teclado</td>
+                <td>25,00 €</td>
+                <td>15</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=teclado+inform%C3%A1tica">Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Ratón</td>
+                <td>12,00 €</td>
+                <td>30</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=rat%C3%B3n+inform%C3%A1tica">Ver producto</a></td>
+            </tr>
+            <tr class="agotado">
+                <td>P003</td>
+                <td>Monitor</td>
+                <td>180,00 €</td>
+                <td>0</td>
+                <td>Agotado</td>
+                <td><a href="https://www.google.com/search?q=monitor+inform%C3%A1tica">Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td>Auriculares</td>
+                <td>35,00 €</td>
+                <td>8</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=auriculares+inform%C3%A1tica">Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P005</td>
+                <td>Webcam</td>
+                <td>45,00 €</td>
+                <td>3</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=webcam+inform%C3%A1tica">Ver producto</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+````

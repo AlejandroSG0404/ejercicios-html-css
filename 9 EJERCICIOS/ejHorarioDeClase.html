@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de clase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 0.8rem;
+        }
+
+        .hora {
+            background-color: #f1f3f5;
+            white-space: nowrap;
+        }
+
+        .clase {
+            font-weight: bold;
+        }
+
+        .clase small {
+            display: block;
+            margin-top: 0.25rem;
+            font-weight: normal;
+        }
+
+        .aweb { background-color: #d6eaff; }
+        .segi { background-color: #e8dcff; }
+        .ing { background-color: #d8f3dc; }
+        .sor { background-color: #ffe5d9; }
+        .opt { background-color: #fff1b6; }
+        .proy { background-color: #ffd6e0; }
+        .ipe { background-color: #d9f0f0; }
+        .sred { background-color: #e9edc9; }
+        .aloa { background-color: #f3d5f5; }
+        .nieoa { background-color: #dce6ff; }
+
+        .recreo {
+            background-color: #f0f0f0;
+            font-size: 1.1rem;
+            letter-spacing: 0.08em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="hora" scope="row">15:15 - 16:15</th>
+                <td class="clase aweb" rowspan="2">AWEBt<small>AloAt</small></td>
+                <td class="clase segi" rowspan="2">SEGIt<small>ASM2t</small></td>
+                <td class="clase ing" rowspan="2">INGt<small>CarSA</small></td>
+                <td class="clase sor" rowspan="2">SOR<small>EspAJ</small></td>
+                <td class="clase opt" rowspan="2">Opt<small>ASM2t</small></td>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">16:15 - 17:15</th>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">17:15 - 18:15</th>
+                <td class="clase proy">Proy<small>ASM2t</small></td>
+                <td class="clase aloa">AloAt</td>
+                <td class="clase ipe">IPE2<small>ASM2t</small></td>
+                <td class="clase nieoa">NieOA</td>
+                <td class="clase ipe">IPE2<small>ASM2t</small></td>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">18:15 - 18:30</th>
+                <td class="recreo" colspan="5"><strong>RECREO</strong></td>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">18:30 - 19:30</th>
+                <td class="clase sor">SOR<small>EspAJ</small></td>
+                <td class="clase ipe">IPE2<small>NieOA</small></td>
+                <td class="clase proy">Proy<small>AloAt</small></td>
+                <td class="clase sred">SRed<small>HEIGM</small></td>
+                <td class="clase sred">SRed<small>HEIGM</small></td>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">19:30 - 20:15</th>
+                <td class="clase sor" rowspan="2">SOR<small>EspAJ</small></td>
+                <td class="clase sred" rowspan="2">SRed<small>HEIGM</small></td>
+                <td class="clase aweb" rowspan="2">AWEBt<small>AloAt</small></td>
+                <td class="clase segi" rowspan="2">SEGIt<small>MorMM</small></td>
+                <td class="clase sred" rowspan="2">SRed<small>HEIGM</small></td>
+            </tr>
+            <tr>
+                <th class="hora" scope="row">20:30 - 21:30</th>
+            </tr>
+        </tbody>
+    </table>
+
+
+<p> Alejandro Sánchez Gutiérrez</p>
+
+<img src="/imagenes/giphy.gif" alt="GIF HTML">
+</body>
+</html>
